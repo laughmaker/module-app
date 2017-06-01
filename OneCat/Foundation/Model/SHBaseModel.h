@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import <YYKit/NSObject+YYModel.h>
+#import "NSObject+YYModel.h"
 
 @interface SHBaseModel : NSObject
 

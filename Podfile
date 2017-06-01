@@ -19,5 +19,6 @@ pod 'TWHUD', '~> 1.0.1'
 pod 'TWSNS', '~> 1.1.3'
 pod 'JLRoutes', '~> 2.0.5'
 pod 'YYKit'
+pod 'Aspects', '~> 1.4.0'
 
 end
