@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SHSignUpVC.h
 //  OneCat
 //
 //  Created by 何振东 on 2017/5/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SHSignUpVC : UIViewController
 
 @end
-
