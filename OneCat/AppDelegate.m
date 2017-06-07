@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "JLRoutes.h"
-#import "SHUserRouter.h"
+#import "SHRouter.h"
+#import "SHUserModule.h"
 
 @interface AppDelegate ()
 
@@ -21,19 +21,20 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UIViewController *vc = [SHUserRouter viewController:@"Profile" useStoryboard:YES];
+    [SHRouter shareInstance].scheme = @"onecat";
+    [[SHRouter shareInstance] registerModules:@[@"SHUserModule", @"SHSettingModule"]];
+//    [[SHRouter shareInstance] registerModule:@"SHSettingModule"];
+    
+    UIViewController *vc = [[SHRouter shareInstance] viewController:@"Profile" forModule:@"User" useStoryboard:YES];
 
-    vc.view.backgroundColor = [UIColor orangeColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
-    
-    [[SHUserRouter router] registerRouter];
     
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options {
-        return [JLRoutes routeURL:url];
+    return [SHRouter handleURL:url];
 }
 
 

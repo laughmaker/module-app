@@ -8,6 +8,7 @@
 
 #import "SHSignUpVC.h"
 #import "SHUserService.h"
+#import "UIViewController+SHRouter.h"
 
 @interface SHSignUpVC ()
 @property (weak, nonatomic) IBOutlet UILabel *lbl;
@@ -21,14 +22,18 @@
 
     self.lbl.text = @"sdfdfdsf";
 
-    NSDictionary *params = @{@"username": @"18502565746",
-                             @"password": @"18502565746"};
+    NSDictionary *params = @{@"username": @"333",
+                             @"password": @"333"};
     SHUserService *userService = [SHUserService service];
     [userService signInWithParam:params handler:^(SHServiceModel *serviceModel) {
         NSLog(@"model:%@", serviceModel);
         SHUserModel *user = [serviceModel getDataObject:[SHUserModel class]];
         NSLog(@"user:%@", user);
     }];
+    
+    NSLog(@"action:%@", self.action);
+    NSLog(@"primaryKey:%@", self.primaryKey);
+    NSLog(@"params:%@", self.routerParams);
 }
 
 

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 @import UIKit;
-#import "SHRouter.h"
+#import "SHModule.h"
 
-@interface SHUserRouter : SHRouter
+@interface SHUserModule : SHModule
 
 @end

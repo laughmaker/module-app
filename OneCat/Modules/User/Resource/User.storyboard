@@ -36,6 +36,38 @@
                                     <segue destination="ygb-zv-PVu" kind="show" id="R2X-Gk-LZU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxi-UW-3VP">
+                                <rect key="frame" x="127" y="80" width="110" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="signUp"/>
+                                <connections>
+                                    <action selector="signUp:" destination="r0v-Zg-ZwN" eventType="touchUpInside" id="nbv-eD-gPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KX-4N-DGF">
+                                <rect key="frame" x="138" y="167" width="104" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="present setting"/>
+                                <connections>
+                                    <action selector="toSetting:" destination="r0v-Zg-ZwN" eventType="touchUpInside" id="qzP-CQ-dsv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-G6-Cu6">
+                                <rect key="frame" x="36" y="545" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="push setting"/>
+                                <connections>
+                                    <action selector="pushSetting:" destination="r0v-Zg-ZwN" eventType="touchUpInside" id="LZE-RP-3QE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTV-ZB-D6f">
+                                <rect key="frame" x="163" y="545" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="remove setting"/>
+                                <connections>
+                                    <action selector="removeSetting:" destination="r0v-Zg-ZwN" eventType="touchUpInside" id="RXo-Jx-kYR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

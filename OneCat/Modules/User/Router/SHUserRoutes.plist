@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>moduleName</key>
+	<string>User</string>
+	<key>routes</key>
+	<array>
+		<dict>
+			<key>useStoryboard</key>
+			<true/>
+			<key>controller</key>
+			<string>SignUp</string>
+			<key>action</key>
+			<string>*</string>
+			<key>primaryKey</key>
+			<string></string>
+			<key>params</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>useStoryboard</key>
+			<true/>
+			<key>controller</key>
+			<string>Profile</string>
+			<key>action</key>
+			<string>*</string>
+			<key>primaryKey</key>
+			<string></string>
+			<key>params</key>
+			<dict/>
+		</dict>
+	</array>
+</dict>
+</plist>

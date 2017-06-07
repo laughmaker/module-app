@@ -13,7 +13,7 @@
 		11972248F0B8AC3D7C36E9D7 /* User.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11972C6FC135B0FC8EB0402D /* User.xcassets */; };
 		11972258DB0CD141CA418C46 /* SHProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11972A294BCE0E9E73E8FA6B /* SHProfileVC.m */; };
 		119722800F9C41CBC6F95335 /* SHRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 119725E5D0CEE9378541803D /* SHRouter.m */; };
-		119724DEF83FBABD773FC3BB /* SHUserRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 119724D34597A0BDE6E25C12 /* SHUserRouter.m */; };
+		119724DEF83FBABD773FC3BB /* SHUserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 119724D34597A0BDE6E25C12 /* SHUserModule.m */; };
 		1197262A10A46978B7FF440A /* SHSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11972FEA74BC602A265730B9 /* SHSignUpVC.m */; };
 		119728025AE6AA93435615BE /* SHURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11972327D581AF5964839319 /* SHURLRequest.m */; };
 		11972856FBD7B5183659F628 /* SHViewControllerInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 11972A893F2E27F7C10DC7D6 /* SHViewControllerInterceptor.m */; };
@@ -30,6 +30,14 @@
 		2806CA721EDC570D00E85DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806CA701EDC570D00E85DAB /* LaunchScreen.storyboard */; };
 		2806CA7D1EDC570D00E85DAB /* OneCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2806CA7C1EDC570D00E85DAB /* OneCatTests.m */; };
 		2806CA881EDC570D00E85DAB /* OneCatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2806CA871EDC570D00E85DAB /* OneCatUITests.m */; };
+		286B68A81EE6DD3200330A95 /* SHRouterPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 286B68A71EE6DD3200330A95 /* SHRouterPattern.m */; };
+		286B68AD1EE78EF200330A95 /* SHUserRoutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286B68AC1EE78EF200330A95 /* SHUserRoutes.plist */; };
+		286B68B01EE790E500330A95 /* UIViewController+SHRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 286B68AF1EE790E500330A95 /* UIViewController+SHRouter.m */; };
+		286B68B41EE7A01400330A95 /* SHModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 286B68B31EE7A01400330A95 /* SHModule.m */; };
+		286B68B61EE7E20700330A95 /* SHSettingRoutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286B68B51EE7E20700330A95 /* SHSettingRoutes.plist */; };
+		286B68BA1EE7E25E00330A95 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286B68B91EE7E25E00330A95 /* Setting.storyboard */; };
+		286B68BD1EE7E2A400330A95 /* SHSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 286B68BC1EE7E2A400330A95 /* SHSettingVC.m */; };
+		286B68C01EE7E34A00330A95 /* SHSettingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 286B68BF1EE7E34A00330A95 /* SHSettingModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +65,7 @@
 		11972336AA6923E205E29954 /* SHServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHServiceModel.h; sourceTree = "<group>"; };
 		1197238FF46FE1CA1C0A713B /* SHHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHUD.m; sourceTree = "<group>"; };
 		119724829D666193463787B5 /* SHCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCustomView.m; sourceTree = "<group>"; };
-		119724D34597A0BDE6E25C12 /* SHUserRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHUserRouter.m; sourceTree = "<group>"; };
+		119724D34597A0BDE6E25C12 /* SHUserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHUserModule.m; sourceTree = "<group>"; };
 		119725DAE5A8E218906961ED /* SHPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPageModel.m; sourceTree = "<group>"; };
 		119725E5D0CEE9378541803D /* SHRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRouter.m; sourceTree = "<group>"; };
 		11972661172D3735867505AD /* SHSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSignUpVC.h; sourceTree = "<group>"; };
@@ -66,7 +74,7 @@
 		11972760C0E3B1009B57022D /* SHUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserService.h; sourceTree = "<group>"; };
 		11972767393F0774B1DF2DAA /* SHBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseModel.m; sourceTree = "<group>"; };
 		11972897EA8427349C1FE134 /* SHUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserAPI.h; sourceTree = "<group>"; };
-		119728B45B8AE19286255855 /* SHUserRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserRouter.h; sourceTree = "<group>"; };
+		119728B45B8AE19286255855 /* SHUserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserModule.h; sourceTree = "<group>"; };
 		11972963B7473F44E91CD9FD /* SHBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseService.m; sourceTree = "<group>"; };
 		11972A294BCE0E9E73E8FA6B /* SHProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProfileVC.m; sourceTree = "<group>"; };
 		11972A5BFBD7451B94D67C57 /* SHPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPageModel.h; sourceTree = "<group>"; };
@@ -95,6 +103,20 @@
 		2806CA831EDC570D00E85DAB /* OneCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2806CA871EDC570D00E85DAB /* OneCatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneCatUITests.m; sourceTree = "<group>"; };
 		2806CA891EDC570D00E85DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286B68A61EE6DD3200330A95 /* SHRouterPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRouterPattern.h; sourceTree = "<group>"; };
+		286B68A71EE6DD3200330A95 /* SHRouterPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRouterPattern.m; sourceTree = "<group>"; };
+		286B68AC1EE78EF200330A95 /* SHUserRoutes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = SHUserRoutes.plist; sourceTree = "<group>"; };
+		286B68AE1EE790E500330A95 /* UIViewController+SHRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHRouter.h"; sourceTree = "<group>"; };
+		286B68AF1EE790E500330A95 /* UIViewController+SHRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHRouter.m"; sourceTree = "<group>"; };
+		286B68B11EE7916100330A95 /* SHRouterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHRouterDelegate.h; sourceTree = "<group>"; };
+		286B68B21EE7A01400330A95 /* SHModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHModule.h; sourceTree = "<group>"; };
+		286B68B31EE7A01400330A95 /* SHModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHModule.m; sourceTree = "<group>"; };
+		286B68B51EE7E20700330A95 /* SHSettingRoutes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = SHSettingRoutes.plist; sourceTree = "<group>"; };
+		286B68B91EE7E25E00330A95 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		286B68BB1EE7E2A400330A95 /* SHSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSettingVC.h; sourceTree = "<group>"; };
+		286B68BC1EE7E2A400330A95 /* SHSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSettingVC.m; sourceTree = "<group>"; };
+		286B68BE1EE7E34A00330A95 /* SHSettingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSettingModule.h; sourceTree = "<group>"; };
+		286B68BF1EE7E34A00330A95 /* SHSettingModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSettingModule.m; sourceTree = "<group>"; };
 		4EE0B05A0284F359E3109230 /* libPods-OneCat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneCat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AACD5FFF7CC20E7AECC29C /* Pods-OneCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneCat.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneCat/Pods-OneCat.release.xcconfig"; sourceTree = "<group>"; };
 		6A7E7E0122B9B9047F941A01 /* Pods-OneCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneCat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneCat/Pods-OneCat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +157,36 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		119720585C878A19880C63ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		119722CD2845D65D4A8DD145 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1197232450DFFA1D1051C241 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				286B68BB1EE7E2A400330A95 /* SHSettingVC.h */,
+				286B68BC1EE7E2A400330A95 /* SHSettingVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1197234B610EDC1E34B5155B /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 		119723B22C1C4D1469511149 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +199,15 @@
 		119724A1A9637BE6C5539512 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				119725E5D0CEE9378541803D /* SHRouter.m */,
 				11972B0BDCE21A0809917B60 /* SHRouter.h */,
+				119725E5D0CEE9378541803D /* SHRouter.m */,
+				286B68A61EE6DD3200330A95 /* SHRouterPattern.h */,
+				286B68A71EE6DD3200330A95 /* SHRouterPattern.m */,
+				286B68AE1EE790E500330A95 /* UIViewController+SHRouter.h */,
+				286B68AF1EE790E500330A95 /* UIViewController+SHRouter.m */,
+				286B68B11EE7916100330A95 /* SHRouterDelegate.h */,
+				286B68B21EE7A01400330A95 /* SHModule.h */,
+				286B68B31EE7A01400330A95 /* SHModule.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -209,12 +268,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		119729C7111C98AD6FF73C2E /* Component */ = {
+		119729C7111C98AD6FF73C2E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				119728BF8981B5B0B47E95CA /* User */,
+				11972C164E9476B93DFC20FE /* Setting */,
 			);
-			path = Component;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		119729DBCFE1B889F12B40FE /* Service */ = {
@@ -238,10 +298,19 @@
 		11972B435C16FC4863E5ABC6 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				119728B45B8AE19286255855 /* SHUserRouter.h */,
-				119724D34597A0BDE6E25C12 /* SHUserRouter.m */,
+				119728B45B8AE19286255855 /* SHUserModule.h */,
+				119724D34597A0BDE6E25C12 /* SHUserModule.m */,
+				286B68AC1EE78EF200330A95 /* SHUserRoutes.plist */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		11972BAA498AB20229689E9A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				286B68B91EE7E25E00330A95 /* Setting.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		11972BB2EE0AB6FCEA483C9E /* Interceptor */ = {
@@ -251,6 +320,27 @@
 				11972A893F2E27F7C10DC7D6 /* SHViewControllerInterceptor.m */,
 			);
 			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		11972C164E9476B93DFC20FE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				11972BAA498AB20229689E9A /* Resource */,
+				1197232450DFFA1D1051C241 /* Controller */,
+				11972D93DE466F571B5B7153 /* Router */,
+				1197234B610EDC1E34B5155B /* Const */,
+				119720585C878A19880C63ED /* Model */,
+				11972C1766F75AA57FDD8E24 /* View */,
+				119722CD2845D65D4A8DD145 /* Service */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		11972C1766F75AA57FDD8E24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		11972CEF9D4456E8339D015F /* Foundation */ = {
@@ -273,6 +363,16 @@
 				119727369EAAFB3B786CC5A2 /* SHHUD.h */,
 			);
 			path = HUD;
+			sourceTree = "<group>";
+		};
+		11972D93DE466F571B5B7153 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				286B68B51EE7E20700330A95 /* SHSettingRoutes.plist */,
+				286B68BE1EE7E34A00330A95 /* SHSettingModule.h */,
+				286B68BF1EE7E34A00330A95 /* SHSettingModule.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		11972EC684B725E5CE887CE6 /* Const */ = {
@@ -315,7 +415,7 @@
 				2806CA701EDC570D00E85DAB /* LaunchScreen.storyboard */,
 				2806CA731EDC570D00E85DAB /* Info.plist */,
 				2806CA621EDC570D00E85DAB /* Supporting Files */,
-				119729C7111C98AD6FF73C2E /* Component */,
+				119729C7111C98AD6FF73C2E /* Modules */,
 				11972CEF9D4456E8339D015F /* Foundation */,
 			);
 			path = OneCat;
@@ -477,7 +577,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286B68AD1EE78EF200330A95 /* SHUserRoutes.plist in Resources */,
 				2806CA721EDC570D00E85DAB /* LaunchScreen.storyboard in Resources */,
+				286B68BA1EE7E25E00330A95 /* Setting.storyboard in Resources */,
+				286B68B61EE7E20700330A95 /* SHSettingRoutes.plist in Resources */,
 				2806CA6F1EDC570D00E85DAB /* Assets.xcassets in Resources */,
 				119720646416DBDDF1317916 /* User.storyboard in Resources */,
 				11972248F0B8AC3D7C36E9D7 /* User.xcassets in Resources */,
@@ -555,15 +658,20 @@
 			files = (
 				2806CA671EDC570D00E85DAB /* AppDelegate.m in Sources */,
 				2806CA641EDC570D00E85DAB /* main.m in Sources */,
-				119724DEF83FBABD773FC3BB /* SHUserRouter.m in Sources */,
+				286B68BD1EE7E2A400330A95 /* SHSettingVC.m in Sources */,
+				119724DEF83FBABD773FC3BB /* SHUserModule.m in Sources */,
 				11972C9F429EF968B49036F6 /* SHCustomView.m in Sources */,
+				286B68C01EE7E34A00330A95 /* SHSettingModule.m in Sources */,
 				1197262A10A46978B7FF440A /* SHSignUpVC.m in Sources */,
 				11972258DB0CD141CA418C46 /* SHProfileVC.m in Sources */,
+				286B68B01EE790E500330A95 /* UIViewController+SHRouter.m in Sources */,
 				119728C2A57B07D042896B08 /* SHUserModel.m in Sources */,
+				286B68A81EE6DD3200330A95 /* SHRouterPattern.m in Sources */,
 				119728871419E48C2E562410 /* SHUserService.m in Sources */,
 				119728025AE6AA93435615BE /* SHURLRequest.m in Sources */,
 				1197206C158ABA58B265B77D /* SHBaseModel.m in Sources */,
 				11972DA209C14CCE97CE111A /* SHPageModel.m in Sources */,
+				286B68B41EE7A01400330A95 /* SHModule.m in Sources */,
 				119722800F9C41CBC6F95335 /* SHRouter.m in Sources */,
 				119728E59EBF4FCAE9A3C2CA /* SHBaseService.m in Sources */,
 				11972C070F1E80195515F63C /* SHServiceModel.m in Sources */,
