@@ -15,18 +15,16 @@
 
 @interface SHRouter : NSObject
 
+/**
+ * 路由单例
+ */
+@property (class, nonatomic, strong, readonly) SHRouter *shareInstance;
+
 // 注册的模块
 @property (nonatomic, strong, readonly) NSMutableDictionary *modules;
 
 // 路由跳转的scheme，在主项目info中设定, 必须先调用此方法
 @property (nonatomic, copy) NSString *scheme;
-
-/**
- * 获取路由单例，子类重载此方法
- * @return 单例路由对象
- */
-+ (instancetype)shareInstance;
-
 
 // 处理url，用于AppleDalegate中回调
 + (BOOL)handleURL:(NSURL *)url;

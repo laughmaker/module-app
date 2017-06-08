@@ -27,19 +27,19 @@
 }
 
 - (IBAction)signUp:(id)sender {
-    [[SHRouter shareInstance] push:@"SignUp/a/b?userId=434&age=323"];
+    [SHRouter.shareInstance push:@"SignUp/a/b?userId=434&age=323"];
 }
 
 - (IBAction)toSetting:(id)sender {
-    [[SHRouter shareInstance] present:@"Setting"];
+    [SHRouter.shareInstance present:@"Setting"];
 }
 
 - (IBAction)removeSetting:(id)sender {
-    [[SHRouter shareInstance] removeModule:@"SHSettingModule"];
+    [SHRouter.shareInstance removeModule:@"SHSettingModule"];
 }
 
 - (IBAction)pushSetting:(id)sender {
-    [[SHRouter shareInstance] push:@"Setting"];
+    [SHRouter.shareInstance push:@"Setting"];
 }
 
 @end
